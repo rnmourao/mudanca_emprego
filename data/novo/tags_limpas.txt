@@ -1,0 +1,181 @@
+Resume NonXMLResume TextResume 
+Resume ResumeId IdValue 
+Resume StructuredXMLResume Achievements Achievement Description 
+Resume StructuredXMLResume Associations Association EndDate Year 
+Resume StructuredXMLResume Associations Association Name 
+Resume StructuredXMLResume Associations Association Role Name 
+Resume StructuredXMLResume Associations Association StartDate Year 
+Resume StructuredXMLResume ContactInfo ContactMethod Fax FormattedNumber 
+Resume StructuredXMLResume ContactInfo ContactMethod InternetEmailAddress 
+Resume StructuredXMLResume ContactInfo ContactMethod InternetWebAddress 
+Resume StructuredXMLResume ContactInfo ContactMethod Location 
+Resume StructuredXMLResume ContactInfo ContactMethod Mobile FormattedNumber 
+Resume StructuredXMLResume ContactInfo ContactMethod PostalAddress CountryCode 
+Resume StructuredXMLResume ContactInfo ContactMethod PostalAddress DeliveryAddress AddressLine 
+Resume StructuredXMLResume ContactInfo ContactMethod PostalAddress Municipality 
+Resume StructuredXMLResume ContactInfo ContactMethod PostalAddress PostalCode 
+Resume StructuredXMLResume ContactInfo ContactMethod PostalAddress Region 
+Resume StructuredXMLResume ContactInfo ContactMethod Telephone FormattedNumber 
+Resume StructuredXMLResume ContactInfo ContactMethod Use 
+Resume StructuredXMLResume ContactInfo ContactMethod WhenAvailable 
+Resume StructuredXMLResume ContactInfo PersonName 
+Resume StructuredXMLResume ContactInfo PersonName Affix 
+Resume StructuredXMLResume ContactInfo PersonName FamilyName 
+Resume StructuredXMLResume ContactInfo PersonName FormattedName 
+Resume StructuredXMLResume ContactInfo PersonName GivenName 
+Resume StructuredXMLResume ContactInfo PersonName MiddleName 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree Comments 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DatesOfAttendance EndDate AnyDate 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DatesOfAttendance EndDate StringDate 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DatesOfAttendance EndDate Year 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DatesOfAttendance EndDate YearMonth 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DatesOfAttendance StartDate AnyDate 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DatesOfAttendance StartDate Year 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DatesOfAttendance StartDate YearMonth 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DegreeDate AnyDate 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DegreeDate Year 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DegreeDate YearMonth 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DegreeMajor Name 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DegreeMeasure EducationalMeasure MeasureSystem 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DegreeMeasure EducationalMeasure MeasureValue StringValue 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DegreeMinor Name 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree DegreeName 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree UserArea DegreeUserArea Graduated 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree UserArea DegreeUserArea Id 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree UserArea DegreeUserArea NormalizedDegreeName 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution Degree UserArea DegreeUserArea NormalizedDegreeType 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution PostalAddress CountryCode 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution PostalAddress Municipality 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution PostalAddress Region 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution School SchoolName 
+Resume StructuredXMLResume EducationHistory SchoolOrInstitution UserArea 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg EmployerOrgName 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory Description 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory EndDate AnyDate 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory EndDate StringDate 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory EndDate Year 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory EndDate YearMonth 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory JobCategory CategoryCode 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory JobCategory Comments 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory JobCategory TaxonomyName 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory OrgInfo PositionLocation CountryCode 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory OrgInfo PositionLocation Municipality 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory OrgInfo PositionLocation Region 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory OrgInfo WebSite 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory OrgName OrganizationName 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory StartDate AnyDate 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory StartDate StringDate 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory StartDate Year 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory StartDate YearMonth 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory Title 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea CompanyNameProbabilityInterpretation 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea Id 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea IsSelfEmployed 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea NormalizedOrganizationName 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea NormalizedTitle 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea PositionTitleProbabilityInterpretation 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea SelfEmploymentPhrase 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea Skill 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg PositionHistory UserArea PositionHistoryUserArea Subtitles Subtitle 
+Resume StructuredXMLResume EmploymentHistory EmployerOrg UserArea EmployerOrgUserArea NormalizedEmployerOrgName 
+Resume StructuredXMLResume ExecutiveSummary 
+Resume StructuredXMLResume Languages Language Comments 
+Resume StructuredXMLResume Languages Language LanguageCode 
+Resume StructuredXMLResume Languages Language Read 
+Resume StructuredXMLResume Languages Language Speak 
+Resume StructuredXMLResume Languages Language Write 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification Description 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification EffectiveDate FirstIssuedDate AnyDate 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification EffectiveDate FirstIssuedDate Year 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification EffectiveDate FirstIssuedDate YearMonth 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification EffectiveDate ValidFrom Year 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification EffectiveDate ValidFrom YearMonth 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification EffectiveDate ValidTo StringDate 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification EffectiveDate ValidTo Year 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification EffectiveDate ValidTo YearMonth 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification Id 
+Resume StructuredXMLResume LicensesAndCertifications LicenseOrCertification Name 
+Resume StructuredXMLResume Objective 
+Resume StructuredXMLResume Qualifications QualificationSummary 
+Resume StructuredXMLResume References Reference Comments 
+Resume StructuredXMLResume References Reference ContactMethod InternetEmailAddress 
+Resume StructuredXMLResume References Reference ContactMethod InternetWebAddress 
+Resume StructuredXMLResume References Reference ContactMethod Location 
+Resume StructuredXMLResume References Reference ContactMethod Mobile FormattedNumber 
+Resume StructuredXMLResume References Reference ContactMethod PostalAddress CountryCode 
+Resume StructuredXMLResume References Reference ContactMethod PostalAddress DeliveryAddress AddressLine 
+Resume StructuredXMLResume References Reference ContactMethod PostalAddress Municipality 
+Resume StructuredXMLResume References Reference ContactMethod PostalAddress Region 
+Resume StructuredXMLResume References Reference ContactMethod Telephone FormattedNumber 
+Resume StructuredXMLResume References Reference ContactMethod Use 
+Resume StructuredXMLResume References Reference ContactMethod WhenAvailable 
+Resume StructuredXMLResume References Reference PersonName FamilyName 
+Resume StructuredXMLResume References Reference PersonName FormattedName 
+Resume StructuredXMLResume References Reference PersonName GivenName 
+Resume StructuredXMLResume References Reference PersonName MiddleName 
+Resume StructuredXMLResume References Reference PositionTitle 
+Resume StructuredXMLResume RevisionDate 
+Resume UserArea ResumeUserArea CoverLetterText 
+Resume UserArea ResumeUserArea Culture Country 
+Resume UserArea ResumeUserArea Culture CultureInfo 
+Resume UserArea ResumeUserArea Culture Language 
+Resume UserArea ResumeUserArea DigitalSignature 
+Resume UserArea ResumeUserArea ExperienceSummary AttentionNeeded 
+Resume UserArea ResumeUserArea ExperienceSummary AverageMonthsPerEmployer 
+Resume UserArea ResumeUserArea ExperienceSummary CurrentManagementLevel 
+Resume UserArea ResumeUserArea ExperienceSummary Description 
+Resume UserArea ResumeUserArea ExperienceSummary ExecutiveType 
+Resume UserArea ResumeUserArea ExperienceSummary FulltimeDirectHirePredictiveIndex 
+Resume UserArea ResumeUserArea ExperienceSummary HighestManagementScore 
+Resume UserArea ResumeUserArea ExperienceSummary ManagementStory 
+Resume UserArea ResumeUserArea ExperienceSummary MonthsOfManagementExperience 
+Resume UserArea ResumeUserArea ExperienceSummary MonthsOfWorkExperience 
+Resume UserArea ResumeUserArea ExperienceSummary SkillsTaxonomyOutput TaxonomyRoot Taxonomy Subtaxonomy 
+Resume UserArea ResumeUserArea ExperienceSummary SkillsTaxonomyOutput TaxonomyRoot Taxonomy Subtaxonomy Skill 
+Resume UserArea ResumeUserArea ExperienceSummary SkillsTaxonomyOutput TaxonomyRoot Taxonomy Subtaxonomy Skill ChildSkill 
+Resume UserArea ResumeUserArea Hobbies Text 
+Resume UserArea ResumeUserArea LicenseSerialNumber 
+Resume UserArea ResumeUserArea ParseTime 
+Resume UserArea ResumeUserArea ParsedTextLength 
+Resume UserArea ResumeUserArea ParserConfigurationString 
+Resume UserArea ResumeUserArea ParserVersion 
+Resume UserArea ResumeUserArea PersonalInformation 
+Resume UserArea ResumeUserArea PersonalInformation Availability 
+Resume UserArea ResumeUserArea PersonalInformation Birthplace 
+Resume UserArea ResumeUserArea PersonalInformation CurrentSalary 
+Resume UserArea ResumeUserArea PersonalInformation DateOfBirth 
+Resume UserArea ResumeUserArea PersonalInformation DrivingLicense 
+Resume UserArea ResumeUserArea PersonalInformation FamilyComposition 
+Resume UserArea ResumeUserArea PersonalInformation FathersName 
+Resume UserArea ResumeUserArea PersonalInformation Gender 
+Resume UserArea ResumeUserArea PersonalInformation MaritalStatus 
+Resume UserArea ResumeUserArea PersonalInformation MotherTongue 
+Resume UserArea ResumeUserArea PersonalInformation MothersMaidenName 
+Resume UserArea ResumeUserArea PersonalInformation NationalIdentities NationalIdentity NationalIdentityNumber 
+Resume UserArea ResumeUserArea PersonalInformation NationalIdentities NationalIdentity NationalIdentityPhrase 
+Resume UserArea ResumeUserArea PersonalInformation Nationality 
+Resume UserArea ResumeUserArea PersonalInformation RequiredSalary 
+Resume UserArea ResumeUserArea ReservedData EmailAddresses EmailAddress 
+Resume UserArea ResumeUserArea ReservedData Names Name 
+Resume UserArea ResumeUserArea ReservedData OtherData OtherDatum 
+Resume UserArea ResumeUserArea ReservedData Phones Phone 
+Resume UserArea ResumeUserArea ReservedData TwitterHandles TwitterHandle 
+Resume UserArea ResumeUserArea ReservedData Urls Url 
+Resume UserArea ResumeUserArea ResumeQuality Assessments Assessment Findings Information 
+Resume UserArea ResumeUserArea ResumeQuality Assessments Assessment Level 
+Resume UserArea ResumeUserArea Sections Section 
+Resume UserArea ResumeUserArea TrainingHistory Text 
+Resume UserArea ResumeUserArea TrainingHistory Training Description 
+Resume UserArea ResumeUserArea TrainingHistory Training EndDate AnyDate 
+Resume UserArea ResumeUserArea TrainingHistory Training EndDate StringDate 
+Resume UserArea ResumeUserArea TrainingHistory Training EndDate Year 
+Resume UserArea ResumeUserArea TrainingHistory Training EndDate YearMonth 
+Resume UserArea ResumeUserArea TrainingHistory Training Entity 
+Resume UserArea ResumeUserArea TrainingHistory Training Qualifications Qualification 
+Resume UserArea ResumeUserArea TrainingHistory Training StartDate AnyDate 
+Resume UserArea ResumeUserArea TrainingHistory Training StartDate StringDate 
+Resume UserArea ResumeUserArea TrainingHistory Training StartDate Year 
+Resume UserArea ResumeUserArea TrainingHistory Training StartDate YearMonth 
+Resume UserArea ResumeUserArea TrainingHistory Training TrainingName 
+Resume UserArea ResumeUserArea TrainingHistory Training Type 
+Resume UserArea ResumeUserArea Warnings Warning 

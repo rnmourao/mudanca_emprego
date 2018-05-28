@@ -1,0 +1,79 @@
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}AvailabilityCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}AvailabilityCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}CVComment 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}CVTitle 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}CandidatePermission 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}CandidateStatusCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}CandidateStatusCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}CurrentEmployer 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}CurrentJob 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ExternalID 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ExtraInfo {http://home.textkernel.nl/2013-08-01}ExtraInfo1 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ExtraInfo {http://home.textkernel.nl/2013-08-01}ExtraInfo2 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ExtraInfo {http://home.textkernel.nl/2013-08-01}ExtraInfo3 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ExtraInfo {http://home.textkernel.nl/2013-08-01}ExtraInfo4 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ExtraInfo {http://home.textkernel.nl/2013-08-01}TrxmlID 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}HighestEducationLevelCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}HighestEducationLevelCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}Last3Experiences 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ProfilePicture {http://home.textkernel.nl/2013-08-01}Base64Content 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ProfilePicture {http://home.textkernel.nl/2013-08-01}ContentType 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}ProfilePicture {http://home.textkernel.nl/2013-08-01}Filename 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}SalaryCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}SalaryCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}CustomArea {http://home.textkernel.nl/2013-08-01}TotalExperienceYears 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}DocumentHtml 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}DocumentText 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}DegreeDirection 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}DiplomaCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}DiplomaCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}EducationLevelCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}EducationLevelCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}EndDate 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}GradePointAverage 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}InstituteName 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EducationHistory {http://home.textkernel.nl/2013-08-01}EducationItem {http://home.textkernel.nl/2013-08-01}StartDate 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EmploymentHistory {http://home.textkernel.nl/2013-08-01}EmploymentItem {http://home.textkernel.nl/2013-08-01}Description 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EmploymentHistory {http://home.textkernel.nl/2013-08-01}EmploymentItem {http://home.textkernel.nl/2013-08-01}EmployerName 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EmploymentHistory {http://home.textkernel.nl/2013-08-01}EmploymentItem {http://home.textkernel.nl/2013-08-01}EndDate 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EmploymentHistory {http://home.textkernel.nl/2013-08-01}EmploymentItem {http://home.textkernel.nl/2013-08-01}ExperienceYears 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EmploymentHistory {http://home.textkernel.nl/2013-08-01}EmploymentItem {http://home.textkernel.nl/2013-08-01}JobTitle 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}EmploymentHistory {http://home.textkernel.nl/2013-08-01}EmploymentItem {http://home.textkernel.nl/2013-08-01}StartDate 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Other {http://home.textkernel.nl/2013-08-01}Hobbies {http://home.textkernel.nl/2013-08-01}Hobby 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Other {http://home.textkernel.nl/2013-08-01}References {http://home.textkernel.nl/2013-08-01}Reference 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Performance {http://home.textkernel.nl/2013-08-01}NormalizationTime 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Performance {http://home.textkernel.nl/2013-08-01}PreProcessingTime 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Performance {http://home.textkernel.nl/2013-08-01}ProcessingTime 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Performance {http://home.textkernel.nl/2013-08-01}TemplatingTime 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Performance {http://home.textkernel.nl/2013-08-01}TotalTime 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Address {http://home.textkernel.nl/2013-08-01}City 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Address {http://home.textkernel.nl/2013-08-01}CountryCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Address {http://home.textkernel.nl/2013-08-01}CountryCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Address {http://home.textkernel.nl/2013-08-01}PostalCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Address {http://home.textkernel.nl/2013-08-01}RegionCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Address {http://home.textkernel.nl/2013-08-01}RegionCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Address {http://home.textkernel.nl/2013-08-01}StreetName 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Address {http://home.textkernel.nl/2013-08-01}StreetNumberBase 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}DateOfBirth 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}DriversLicence 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Emails {http://home.textkernel.nl/2013-08-01}Email 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}FirstName 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}GenderCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}GenderCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}HomePhones {http://home.textkernel.nl/2013-08-01}HomePhone 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}LastName 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}MaritalStatusCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}MaritalStatusCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}MobilePhones {http://home.textkernel.nl/2013-08-01}MobilePhone 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}NationalityCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}NationalityCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}SocialMedia {http://home.textkernel.nl/2013-08-01}SocialMediaLink {http://home.textkernel.nl/2013-08-01}SocialMediaType 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}SocialMedia {http://home.textkernel.nl/2013-08-01}SocialMediaLink {http://home.textkernel.nl/2013-08-01}SocialMediaURL 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Personal {http://home.textkernel.nl/2013-08-01}Title 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Skills {http://home.textkernel.nl/2013-08-01}ComputerSkills {http://home.textkernel.nl/2013-08-01}ComputerSkill {http://home.textkernel.nl/2013-08-01}ComputerSkillDuration 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Skills {http://home.textkernel.nl/2013-08-01}ComputerSkills {http://home.textkernel.nl/2013-08-01}ComputerSkill {http://home.textkernel.nl/2013-08-01}ComputerSkillName 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Skills {http://home.textkernel.nl/2013-08-01}LanguageSkills {http://home.textkernel.nl/2013-08-01}LanguageSkill {http://home.textkernel.nl/2013-08-01}LanguageProficiencyCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Skills {http://home.textkernel.nl/2013-08-01}LanguageSkills {http://home.textkernel.nl/2013-08-01}LanguageSkill {http://home.textkernel.nl/2013-08-01}LanguageProficiencyCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Skills {http://home.textkernel.nl/2013-08-01}LanguageSkills {http://home.textkernel.nl/2013-08-01}LanguageSkill {http://home.textkernel.nl/2013-08-01}LanguageSkillCode 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Skills {http://home.textkernel.nl/2013-08-01}LanguageSkills {http://home.textkernel.nl/2013-08-01}LanguageSkill {http://home.textkernel.nl/2013-08-01}LanguageSkillCodeDescription 
+{http://home.textkernel.nl/2013-08-01}Profile {http://home.textkernel.nl/2013-08-01}Skills {http://home.textkernel.nl/2013-08-01}SoftSkills {http://home.textkernel.nl/2013-08-01}SoftSkill {http://home.textkernel.nl/2013-08-01}SoftSkillName 

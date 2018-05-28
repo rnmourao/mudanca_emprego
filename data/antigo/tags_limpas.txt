@@ -1,0 +1,79 @@
+Profile CustomArea AvailabilityCode 
+Profile CustomArea AvailabilityCodeDescription 
+Profile CustomArea CVComment 
+Profile CustomArea CVTitle 
+Profile CustomArea CandidatePermission 
+Profile CustomArea CandidateStatusCode 
+Profile CustomArea CandidateStatusCodeDescription 
+Profile CustomArea CurrentEmployer 
+Profile CustomArea CurrentJob 
+Profile CustomArea ExternalID 
+Profile CustomArea ExtraInfo ExtraInfo1 
+Profile CustomArea ExtraInfo ExtraInfo2 
+Profile CustomArea ExtraInfo ExtraInfo3 
+Profile CustomArea ExtraInfo ExtraInfo4 
+Profile CustomArea ExtraInfo TrxmlID 
+Profile CustomArea HighestEducationLevelCode 
+Profile CustomArea HighestEducationLevelCodeDescription 
+Profile CustomArea Last3Experiences 
+Profile CustomArea ProfilePicture Base64Content 
+Profile CustomArea ProfilePicture ContentType 
+Profile CustomArea ProfilePicture Filename 
+Profile CustomArea SalaryCode 
+Profile CustomArea SalaryCodeDescription 
+Profile CustomArea TotalExperienceYears 
+Profile DocumentHtml 
+Profile DocumentText 
+Profile EducationHistory EducationItem DegreeDirection 
+Profile EducationHistory EducationItem DiplomaCode 
+Profile EducationHistory EducationItem DiplomaCodeDescription 
+Profile EducationHistory EducationItem EducationLevelCode 
+Profile EducationHistory EducationItem EducationLevelCodeDescription 
+Profile EducationHistory EducationItem EndDate 
+Profile EducationHistory EducationItem GradePointAverage 
+Profile EducationHistory EducationItem InstituteName 
+Profile EducationHistory EducationItem StartDate 
+Profile EmploymentHistory EmploymentItem Description 
+Profile EmploymentHistory EmploymentItem EmployerName 
+Profile EmploymentHistory EmploymentItem EndDate 
+Profile EmploymentHistory EmploymentItem ExperienceYears 
+Profile EmploymentHistory EmploymentItem JobTitle 
+Profile EmploymentHistory EmploymentItem StartDate 
+Profile Other Hobbies Hobby 
+Profile Other References Reference 
+Profile Performance NormalizationTime 
+Profile Performance PreProcessingTime 
+Profile Performance ProcessingTime 
+Profile Performance TemplatingTime 
+Profile Performance TotalTime 
+Profile Personal Address City 
+Profile Personal Address CountryCode 
+Profile Personal Address CountryCodeDescription 
+Profile Personal Address PostalCode 
+Profile Personal Address RegionCode 
+Profile Personal Address RegionCodeDescription 
+Profile Personal Address StreetName 
+Profile Personal Address StreetNumberBase 
+Profile Personal DateOfBirth 
+Profile Personal DriversLicence 
+Profile Personal Emails Email 
+Profile Personal FirstName 
+Profile Personal GenderCode 
+Profile Personal GenderCodeDescription 
+Profile Personal HomePhones HomePhone 
+Profile Personal LastName 
+Profile Personal MaritalStatusCode 
+Profile Personal MaritalStatusCodeDescription 
+Profile Personal MobilePhones MobilePhone 
+Profile Personal NationalityCode 
+Profile Personal NationalityCodeDescription 
+Profile Personal SocialMedia SocialMediaLink SocialMediaType 
+Profile Personal SocialMedia SocialMediaLink SocialMediaURL 
+Profile Personal Title 
+Profile Skills ComputerSkills ComputerSkill ComputerSkillDuration 
+Profile Skills ComputerSkills ComputerSkill ComputerSkillName 
+Profile Skills LanguageSkills LanguageSkill LanguageProficiencyCode 
+Profile Skills LanguageSkills LanguageSkill LanguageProficiencyCodeDescription 
+Profile Skills LanguageSkills LanguageSkill LanguageSkillCode 
+Profile Skills LanguageSkills LanguageSkill LanguageSkillCodeDescription 
+Profile Skills SoftSkills SoftSkill SoftSkillName 
