@@ -51,8 +51,15 @@ tab_computacao = []
 tab_idioma = []
 tab_soft = []
 for arquivo in arquivos:
-    arvore = xml.parse(join(XMLS, arquivo))
-    raiz = arvore.getroot()
+    with open(join(XMLS, arquivo), 'r') as r:
+        conteudo = r.read()
+    
+    texto = ''
+    for c in conteudo:
+        texto += c
+    texto = texto.replace('\n', ' ')
+
+    raiz = xml.fromstring(texto)
     tab_pessoal.append(monta_tabela_um(raiz, arquivo, 'Personal'))
     tab_outros.append(monta_tabela_um(raiz, arquivo, 'CustomArea'))
     tab_educacao.extend(monta_tabela_varios(raiz, arquivo, 'EducationItem'))
