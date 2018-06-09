@@ -52,11 +52,8 @@ tab_idioma = []
 tab_soft = []
 for arquivo in arquivos:
     with open(join(XMLS, arquivo), 'r') as r:
-        conteudo = r.read()
+        texto = r.read()
     
-    texto = ''
-    for c in conteudo:
-        texto += c
     texto = texto.replace('\n', ' ')
 
     raiz = xml.fromstring(texto)
