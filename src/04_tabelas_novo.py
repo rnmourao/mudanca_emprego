@@ -4,9 +4,7 @@ from os import listdir
 from os.path import isfile, join
 import pandas as pd
 import string
-import locale
-
-locale.setlocale(locale.LC_TIME, 'pt_BR.utf8')
+import unicodedata
 
 def efetuar_parse(texto):
     from StringIO import StringIO
@@ -46,7 +44,12 @@ for arquivo in arquivos:
         texto = r.read()
     
     # retirar quebras de linha e textos inuteis
-    texto = ''.join(x for x in texto if x in string.printable).replace(',', ' ').lower()
+    texto = unicodedata.normalize('NFKD', unicode(texto, 'utf-8')) \
+                        .encode('ascii', 'ignore') \
+                        .replace(',', ' ') \
+                        .replace('\n', ' ') \
+                        .replace('\t', ' ') \
+                        .lower()
 
     # executar parse
     raiz = efetuar_parse(texto)
