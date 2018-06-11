@@ -31,14 +31,13 @@ def obtem_campos(elemento, chave=''):
     if not filhos:
         if elemento.text:
             linha[chave] = elemento.text
+        else:
+            if 'name' in elemento.attrib:
+                linha[chave] = elemento.attrib['name']
 
-        if 'name' in elemento.attrib:
-            chave += '_' + elemento.attrib['name'].replace(' ', '')
-            linha[chave] = '1'
-
-        if 'totalmonths' in elemento.attrib:
-            chave += '_totalmonths'
-            linha[chave] = elemento.attrib['totalmonths']
+            if 'totalmonths' in elemento.attrib:
+                chave += '_totalmonths'
+                linha[chave] = elemento.attrib['totalmonths']
     else:
         for filho in filhos:
             obtem_campos(filho, chave)
