@@ -5,6 +5,7 @@ from os.path import isfile, join
 import pandas as pd
 import string
 import unicodedata
+from datetime import datetime
 
 def efetuar_parse(texto):
     'Tirar todos os prefixos de tags.'
@@ -34,7 +35,7 @@ def obtem_campos(elemento, chave=''):
         if 'name' in elemento.attrib:
             chave += '_' + elemento.attrib['name'].replace(' ', '')
             linha[chave] = '1'
-        
+
         if 'totalmonths' in elemento.attrib:
             chave += '_totalmonths'
             linha[chave] = elemento.attrib['totalmonths']
@@ -60,7 +61,7 @@ arquivos = [a for a in listdir(caminho_xml) if isfile(join(caminho_xml, a)) and 
 i = 0
 for arquivo in arquivos:
     i += 1
-    print  100*i/float(len(arquivos)), arquivo
+    print  int(100*i/float(len(arquivos))), arquivo
     with open(join(caminho_xml, arquivo), 'r') as r:
         texto = r.read()
     
@@ -87,6 +88,7 @@ for arquivo in arquivos:
                 exec(tabela + '.append(linha)')
 
 for tabela in trechos['structuredxmlresume'] + trechos['userarea']:
+    print str(datetime.now()) + ' salvando ' + tabela
     tab = None
     exec('tab = ' + tabela)
     pd.DataFrame(tab).to_csv(caminho_csv + tabela + '.csv', encoding='utf-8', index=False, sep=',')
