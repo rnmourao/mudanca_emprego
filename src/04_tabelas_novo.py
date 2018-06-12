@@ -7,6 +7,7 @@ import string
 import unicodedata
 from datetime import datetime
 
+
 def efetuar_parse(texto):
     'Tirar todos os prefixos de tags.'
 
@@ -33,7 +34,8 @@ def obtem_campos(elemento, chave=''):
             linha[chave] = elemento.text
         else:
             if 'name' in elemento.attrib:
-                linha[chave] = elemento.attrib['name']
+                chave += '_' + elemento.attrib['name']
+                linha[chave] = 1
 
             if 'totalmonths' in elemento.attrib:
                 chave += '_totalmonths'
