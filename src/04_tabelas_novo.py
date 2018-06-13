@@ -30,16 +30,17 @@ def obtem_campos(elemento, chave=''):
         chave += '_' + elemento.tag
     filhos = list(elemento)
     if not filhos:
-        if elemento.text:
-            linha[chave] = elemento.text
-        else:
-            if 'name' in elemento.attrib:
-                chave += '_' + elemento.attrib['name']
-                linha[chave] = 1
+        if 'skillstaxonomyoutput' not in chave:
+            if elemento.text:
+                linha[chave] = elemento.text
+            else:
+                if 'name' in elemento.attrib:
+                    chave += '_' + elemento.attrib['name']
+                    linha[chave] = 1
 
-            if 'totalmonths' in elemento.attrib:
-                chave += '_totalmonths'
-                linha[chave] = elemento.attrib['totalmonths']
+                if 'totalmonths' in elemento.attrib:
+                    chave += '_totalmonths'
+                    linha[chave] = elemento.attrib['totalmonths']
     else:
         for filho in filhos:
             obtem_campos(filho, chave)
