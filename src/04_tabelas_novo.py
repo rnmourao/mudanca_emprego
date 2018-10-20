@@ -1,20 +1,26 @@
 # -*- coding: utf-8 -*- #
 import xml.etree.ElementTree as xml
-from os import listdir
-from os.path import isfile, join
+import sys
+from os import listdir, makedirs
+from os.path import isfile, join, exists, dirname
 import pandas as pd
 import string
 import unicodedata
 from datetime import datetime
+from io import StringIO
+import re
 
 
 def efetuar_parse(texto):
-    'Tirar todos os prefixos de tags.'
+    'Limpar texto e tirar todos os prefixos de tags, retornando raiz do XML.'
 
-    from StringIO import StringIO
-    import xml.etree.ElementTree as ET
+    # retirar quebras de linha e textos inuteis
+    texto = texto.replace(',', ' ') \
+                 .replace('\n', ' ') \
+                 .replace('\t', ' ') \
+                 .lower()
 
-    it = ET.iterparse(StringIO(texto))
+    it = xml.iterparse(StringIO(texto))
     for _, el in it:
         if '}' in el.tag:
             el.tag = el.tag.split('}', 1)[1].replace('sov:', '')
@@ -45,10 +51,16 @@ def obtem_campos(elemento, chave=''):
         for filho in filhos:
             obtem_campos(filho, chave)
 
+# receber caminhos de entrada e de saida
+caminho_xml = sys.argv[1]
+# precisa receber o caminho dos XMLs
+if not exists(dirname(caminho_xml)):
+    raise RuntimeError('Diretório de XMLs inválido.')
 
-caminho = '/home/mourao/mudanca_emprego/data/novo/'
-caminho_xml = caminho + 'xml/'
-caminho_csv = caminho + 'csv/'
+caminho_csv = sys.argv[2]
+# cria diretorio se esse nao existir
+if not exists(dirname(caminho_csv)):
+    makedirs(dirname(caminho_csv))
 
 trechos = {'structuredxmlresume':  ['contactinfo', 'schoolorinstitution', 'employerorg', 'language', 
                                     'licenseorcertification','qualifications', 'reference'], 
@@ -60,21 +72,10 @@ for tabela in trechos['structuredxmlresume'] + trechos['userarea']:
 
 # ler arquivos xml
 arquivos = [a for a in listdir(caminho_xml) if isfile(join(caminho_xml, a)) and '.xml' in a]
-i = 0
 for arquivo in arquivos:
-    i += 1
-    print  int(100*i/float(len(arquivos))), arquivo
     with open(join(caminho_xml, arquivo), 'r') as r:
         texto = r.read()
     
-    # retirar quebras de linha e textos inuteis
-    texto = unicodedata.normalize('NFKD', unicode(texto, 'utf-8')) \
-                        .encode('ascii', 'ignore') \
-                        .replace(',', ' ') \
-                        .replace('\n', ' ') \
-                        .replace('\t', ' ') \
-                        .lower()
-
     # executar parse
     raiz = efetuar_parse(texto)
 
@@ -90,10 +91,7 @@ for arquivo in arquivos:
                 exec(tabela + '.append(linha)')
 
 for tabela in trechos['structuredxmlresume'] + trechos['userarea']:
-    print str(datetime.now()) + ' salvando ' + tabela
+    print(str(datetime.now()) + ' salvando ' + tabela)
     tab = None
     exec('tab = ' + tabela)
     pd.DataFrame(tab).to_csv(caminho_csv + tabela + '.csv', encoding='utf-8', index=False, sep=',')
-
-# RevisionDate
-# ResumeQuality
