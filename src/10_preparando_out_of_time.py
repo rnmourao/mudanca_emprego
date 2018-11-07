@@ -97,7 +97,7 @@ def intervalo_datas(data_inicio, data_fim):
 
 # receber caminhos de origem e de destino
 caminho = sys.argv[1]
-# precisa receber o caminho dos XMLs
+# precisa receber o caminho dos CSVs
 if not exists(dirname(caminho)):
     raise RuntimeError('Diretório de CSVs inválido.')
 
@@ -469,7 +469,7 @@ for i in ls_ids:
         if i == guarda['id']:
             linha = deepcopy(guarda)
         else:
-            linha = {'id': i, 'data_fim' : data_fim}
+            linha = {'id': i}
         
         
         # criar variavel alvo quando a data de fim for igual aa data iterada
@@ -915,7 +915,13 @@ df = df.fillna(0)
 df.sort_values(by=['id', 'data_fim'], ascending=False, inplace=True)
 df = df.groupby(by=['id', 'data_fim'], as_index=False).first()
 
-# selecionar somente colunas importantes
-df = df[['label', 'experiencia_meses', 'homem', 'idioma-en-fala', 'idioma-en-le', 'skill_estagio', 'solteiro', 'taxa_permanencia', 'tem_cnh', 'tempo_cargo', 'tempo_emprego', 'tempo_empresa', 'tempo_municipio']]
+# selecionar somente colunas importantes, preenchendo com zeros as colunas que faltarem
+selecionadas = ['label', 'experiencia_meses', 'homem', 'idioma-en-fala', 'idioma-en-le', 'skill_estagio', 'solteiro', 'taxa_permanencia', 'tem_cnh', 'tempo_cargo', 'tempo_emprego', 'tempo_empresa', 'tempo_municipio']
+disponiveis = [x for x in df.columns if x in selecionadas]
+nao_encontradas = [x for x in selecionadas if x not in disponiveis]
+df = df[disponiveis]
+
+for coluna in nao_encontradas:
+    df[coluna] = 0
 
 df.to_csv(caminho + 'df.csv', index=False)
