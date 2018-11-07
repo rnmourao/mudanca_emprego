@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import sys
 from os import listdir
-from os.path import isfile, join
+from os.path import isfile, join, exists, dirname
 from datetime import timedelta, date
 from dateutil.relativedelta import relativedelta as rd
 import scipy.stats as stats
@@ -95,9 +95,11 @@ def intervalo_datas(data_inicio, data_fim):
     for n in range(quantidade):
         yield data_inicio + rd(months=n)
 
-
-# recebe caminho onde se encontram os CSVs
+# receber caminhos de origem e de destino
 caminho = sys.argv[1]
+# precisa receber o caminho dos XMLs
+if not exists(dirname(caminho)):
+    raise RuntimeError('Diretório de CSVs inválido.')
 
 # dataframes
 employerorg = None
@@ -183,7 +185,7 @@ for i, l in employerorg.iterrows():
         mes_fim = None
     
    
-    # empregos atuais
+    # ultimo emprego
     if contador == 1:
         if ano_fim is None:
             ano_fim = ANO_FIM_CORRENTE
@@ -205,9 +207,9 @@ for i, l in employerorg.iterrows():
             if ano_inicio is not None:
                 ano_fim = ano_inicio
             
-            # agora, se o ano de inicio do emprego posterior for maior que o ano de inicio,
+            # agora, se o ano de inicio do emprego posterior for maior que o ano de inicio do emprego atual,
             # deve-se atualizar o ano_fim para o ano mais no futuro
-            if guarda_ano_inicio > ano_inicio:
+            if not ano_inicio or guarda_ano_inicio > ano_inicio:
                 ano_fim = guarda_ano_inicio
                 
         if mes_fim is None:
@@ -222,20 +224,20 @@ for i, l in employerorg.iterrows():
             # posterior, mas so o de fim. Por isso eh necessario verificar a data de fim do emprego
             # posterior.
             if ano_fim == guarda_ano_inicio:
-                if guarda_mes_inicio is None:
+                if not guarda_mes_inicio:
                     if ano_fim == guarda_ano_fim:
-                        if guarda_mes_fim is not None and guarda_mes_fim > mes_fim:
+                        if not mes_fim or guarda_mes_fim > mes_fim:
                             mes_fim = guarda_mes_fim
                     else:
                         mes_fim = MES_FIM_MODA
                 else:
-                    if guarda_mes_inicio > mes_fim:
+                    if not mes_fim or guarda_mes_inicio > mes_fim:
                         mes_fim = guarda_mes_inicio
 
             # no caso do mes_fim atual ser menor que o do emprego posterior,
             # eh interessante colocar o mes_fim com dezembro
             else:
-                if mes_fim is None or mes_fim < MES_FIM_MODA:
+                if not mes_fim or mes_fim < MES_FIM_MODA:
                     mes_fim = MES_FIM_MODA
     
     
@@ -299,51 +301,50 @@ for i, l in employerorg.iterrows():
    
     # primeiro emprego
     if contador == 1:
-        if ano_inicio is None:
+        if not ano_inicio:
             ano_inicio = ano_fim
 
-        if mes_inicio is None:  
+        if not mes_inicio:  
             mes_inicio = MES_INICIO_MODA
 
-            if ano_inicio == ano_fim and mes_fim is not None and mes_fim < mes_inicio:
+            if ano_inicio == ano_fim and mes_fim and mes_fim < mes_inicio:
                 mes_inicio = mes_fim
                     
     # empregos posteriores
     else:
-        if ano_inicio is None:
+        if not ano_inicio:
             # ano_inicio deve ser no maximo igual ao ano_fim
-            if ano_fim is not None:
+            if ano_fim:
                 ano_inicio = ano_fim
 
-            if guarda_ano_fim is not None and guarda_ano_fim < ano_inicio:
+            if guarda_ano_fim and guarda_ano_fim < ano_inicio:
                 ano_inicio = guarda_ano_fim
                 
-        if mes_inicio is None:
+        if not mes_inicio:
             # mes_inicio deve ser no maximo igual ao mes_fim
             if ano_inicio == ano_fim:
-                if mes_fim is not None:
+                if mes_fim:
                     mes_inicio = mes_fim
 
             if ano_inicio == guarda_ano_fim:
-                if guarda_mes_fim is None:
+                if not guarda_mes_fim:
                     if ano_inicio == guarda_ano_inicio:
-                        if guarda_mes_inicio is not None and guarda_mes_inicio > mes_inicio:
+                        if not mes_inicio or guarda_mes_inicio > mes_inicio:
                             mes_inicio = guarda_mes_inicio
                     else:
                         mes_inicio = MES_INICIO_MODA
                 else:
-                    if guarda_mes_fim > mes_inicio:
+                    if not mes_inicio or guarda_mes_fim > mes_inicio:
                         mes_inicio = guarda_mes_fim
 
             else:
-                if mes_inicio is None or mes_inicio > MES_INICIO_MODA:
+                if not mes_inicio or mes_inicio > MES_INICIO_MODA:
                     mes_inicio = MES_INICIO_MODA
     
     
     ## preencher mes de inicio   
     employerorg.at[i, 'ano_inicio'] = ano_inicio
     employerorg.at[i, 'mes_inicio'] = mes_inicio
-    
     
     # guarda emprego posterior
     guarda_ano_inicio = ano_inicio
@@ -468,12 +469,12 @@ for i in ls_ids:
         if i == guarda['id']:
             linha = deepcopy(guarda)
         else:
-            linha = {'id': i}
+            linha = {'id': i, 'data_fim' : data_fim}
         
         
         # criar variavel alvo quando a data de fim for igual aa data iterada
         # incluir ou nao periodo desempregado na variavel alvo?
-        if data in [x for x in temp['data_fim'].tolist() if x != date(2018, 7, 1)]:
+        if data in [x for x in temp['data_fim'].tolist() if x != date(2018, 9, 1)]:
             linha['label'] = 1
         else:
             linha['label'] = 0
@@ -536,7 +537,6 @@ for i in ls_ids:
                     linha['skill_' + s] += 1
                 except KeyError:
                     linha['skill_' + s] = 1
-        
         
         #
         
@@ -907,9 +907,15 @@ for i in ls_ids:
 
 # criar dataframe 
 df = pd.DataFrame(ls)
+
+# preencher missing values
 df = df.fillna(0)
+
+# manter somente registros referentes ao ultimo emprego
+df.sort_values(by=['id', 'data_fim'], ascending=False, inplace=True)
+df = df.groupby(by=['id', 'data_fim'], as_index=False).first()
 
 # selecionar somente colunas importantes
 df = df[['label', 'experiencia_meses', 'homem', 'idioma-en-fala', 'idioma-en-le', 'skill_estagio', 'solteiro', 'taxa_permanencia', 'tem_cnh', 'tempo_cargo', 'tempo_emprego', 'tempo_empresa', 'tempo_municipio']]
 
-df.to_csv('../data/df.csv', index=False)
+df.to_csv(caminho + 'df.csv', index=False)
