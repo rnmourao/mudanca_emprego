@@ -95,6 +95,13 @@ def intervalo_datas(data_inicio, data_fim):
     for n in range(quantidade):
         yield data_inicio + rd(months=n)
 
+
+MES_INICIO_MODA = 1
+MES_FIM_MODA = 12
+ANO_FIM_CORRENTE = 2018
+MES_FIM_CORRENTE = 9
+
+
 # receber caminhos de origem e de destino
 caminho = sys.argv[1]
 # precisa receber o caminho dos CSVs
@@ -129,6 +136,7 @@ employerorg['mes_fim'] = employerorg.apply(extrai_tempo_empresa, axis=1, inicio=
 
 # retirando registros com data de inicio e de fim invertidas
 ls = []
+contador = 0
 for i, l in employerorg.iterrows():
     try:
         dt_ini = date(int(l['ano_inicio']), int(l['mes_inicio']), 1)
@@ -137,18 +145,20 @@ for i, l in employerorg.iterrows():
         if dt_ini > dt_fim:
             ls.append(i)
     except:
+        contador += 1
         pass
     
 employerorg.drop(ls, inplace=True)
 employerorg.reset_index(drop=True, inplace=True)
 employerorg.sort_values(by=['id', 'ano_fim', 'ano_inicio', 'mes_fim', 'mes_inicio'], ascending=False, inplace=True)
 
-# tratar datas de fim
-MES_INICIO_MODA = 1
-MES_FIM_MODA = 12
-ANO_FIM_CORRENTE = 2018
-MES_FIM_CORRENTE = 9
+ids = list(set(employerorg.id.tolist()))
 
+for id in ids:
+    
+
+
+# tratar datas de fim
 guarda = None
 for i, l in employerorg.iterrows():
 
@@ -184,7 +194,6 @@ for i, l in employerorg.iterrows():
     except:
         mes_fim = None
     
-   
     # ultimo emprego
     if contador == 1:
         if ano_fim is None:
@@ -204,7 +213,7 @@ for i, l in employerorg.iterrows():
     else:
         if ano_fim is None:
             # ano_fim deve ser pelo menos igual ao ano_inicio
-            if ano_inicio is not None:
+            if ano_inicio:
                 ano_fim = ano_inicio
             
             # agora, se o ano de inicio do emprego posterior for maior que o ano de inicio do emprego atual,
@@ -261,6 +270,7 @@ for i, l in employerorg.iterrows():
 employerorg.drop(ls, inplace=True)
 employerorg.reset_index(drop=True, inplace=True)
 employerorg.sort_values(by=['id', 'ano_fim', 'ano_inicio', 'mes_fim', 'mes_inicio'], ascending=True, inplace=True)
+employerorg.to_csv(caminho + 'employerorg_com_datas.csv', index=False)
 
 # Tratar datas de inicio
 guarda = None
